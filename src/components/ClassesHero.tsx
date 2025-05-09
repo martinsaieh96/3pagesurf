@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -10,7 +9,7 @@ const ClassesHero = () => {
       {/* Hero image background */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img 
-          src="/lovable-uploads/48272db4-b5ad-4f50-9970-a566a197c968.png" 
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80" 
           alt="Clases de surf en Pichilemu" 
           className="object-cover w-full h-full"
         />

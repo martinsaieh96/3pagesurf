@@ -67,6 +67,7 @@ type FormValues = z.infer<typeof formSchema>;
 interface ClassReservationFormProps {
   classType: ClassType;
   onClose: () => void;
+  isRental?: boolean;
 }
 
 const availableTimes = [
@@ -74,7 +75,7 @@ const availableTimes = [
   "13:00", "14:00", "15:00", "16:00", "17:00"
 ];
 
-export function ClassReservationForm({ classType, onClose }: ClassReservationFormProps) {
+export function ClassReservationForm({ classType, onClose, isRental }: ClassReservationFormProps) {
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -90,9 +91,13 @@ export function ClassReservationForm({ classType, onClose }: ClassReservationFor
     const formattedDate = format(data.date, "dd 'de' MMMM 'de' yyyy", { locale: es });
     
     // Create WhatsApp message
-    const message = `¡Hola! Quiero reservar una clase de surf:\n\n` +
-      `📋 *Detalles de la Reserva:*\n` +
-      `• Clase: ${classType.title}\n` +
+    const message = (isRental
+      ? `¡Hola! Quiero reservar un arriendo de equipo:\n\n` +
+        `📋 *Detalles del Arriendo:*\n`
+      : `¡Hola! Quiero reservar una clase de surf:\n\n` +
+        `📋 *Detalles de la Reserva:*\n`
+    ) +
+      `• ${isRental ? 'Equipo' : 'Clase'}: ${classType.title}\n` +
       `• Precio: ${classType.price}\n` +
       `• Nombre: ${data.name}\n` +
       `• Email: ${data.email}\n` +

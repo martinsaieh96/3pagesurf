@@ -8,7 +8,7 @@ const AboutHero = () => {
       {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/lovable-uploads/hero-surfers.jpg')" }}
+        style={{ backgroundImage: "url('/hero-surfers.jpg')" }}
       >
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20"></div>

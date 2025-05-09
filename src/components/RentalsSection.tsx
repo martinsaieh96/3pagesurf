@@ -1,9 +1,10 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import ClassReservationForm, { ClassType } from "@/components/ClassReservationForm";
 
 const RentalsSection = () => {
   const rentalOptions = [
@@ -32,6 +33,18 @@ const RentalsSection = () => {
       icon: "🎁"
     },
   ];
+
+  const [selectedRental, setSelectedRental] = React.useState<ClassType | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = React.useState(false);
+
+  const openRentalDialog = (rental: ClassType) => {
+    setSelectedRental(rental);
+    setIsDialogOpen(true);
+  };
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+  };
 
   const container = {
     hidden: { opacity: 0 },
@@ -106,8 +119,15 @@ const RentalsSection = () => {
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                   >
-                    <Button asChild className="w-full bg-surf-blue hover:bg-surf-blue-dark">
-                      <Link to="/contacto">Reservar Ahora</Link>
+                    <Button 
+                      className="w-full bg-surf-blue hover:bg-surf-blue-dark"
+                      onClick={() => openRentalDialog({
+                        title: option.title,
+                        price: option.price,
+                        color: "bg-surf-blue"
+                      })}
+                    >
+                      Reservar Ahora
                     </Button>
                   </motion.div>
                 </CardFooter>
@@ -116,6 +136,19 @@ const RentalsSection = () => {
           ))}
         </motion.div>
       </div>
+
+      {/* Rental Reservation Dialog */}
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="sm:max-w-[600px]">
+          {selectedRental && (
+            <ClassReservationForm 
+              classType={selectedRental} 
+              onClose={closeDialog} 
+              isRental={true} // para personalizar el mensaje de WhatsApp
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
@@ -18,7 +17,7 @@ const HeroSection = () => {
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img 
-          src="/lovable-uploads/55260880-ea99-413f-b9dc-f83702d5ecec.png" 
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80" 
           alt="Olas de Pichilemu" 
           className="object-cover w-full h-full"
         />
