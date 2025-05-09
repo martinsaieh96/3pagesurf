@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img 
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80" 
+          src="/morro.png" 
           alt="Olas de Pichilemu" 
           className="object-cover w-full h-full"
         />

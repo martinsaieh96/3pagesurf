@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Compass, Eye, Heart } from 'lucide-react';
@@ -45,7 +44,7 @@ const MissionSection = () => {
               icon={Compass}
               title="Nuestra Misión"
               subtitle="Conectar personas con el océano"
-              description="Enseñar surf de manera segura y profesional, creando una comunidad comprometida con el respeto al mar y la naturaleza, mientras fomentamos un estilo de vida saludable."
+              description="Enseñar surf de manera segura y profesional, creando una comunidad comprometida con el respeto al mar y la naturaleza, mientras fomentamos un estilo de vida saludable en EscuelaSurf."
             />
           </motion.div>
           
@@ -59,7 +58,7 @@ const MissionSection = () => {
               icon={Eye}
               title="Nuestra Visión"
               subtitle="Referentes del surf nacional"
-              description="Ser reconocidos como la escuela líder en Chile por nuestra metodología de enseñanza, calidad de servicio y compromiso con el desarrollo sostenible del deporte."
+              description="Ser reconocidos como la escuela líder en Chile por nuestra metodología de enseñanza, calidad de servicio y compromiso con el desarrollo sostenible del deporte en EscuelaSurf."
             />
           </motion.div>
           

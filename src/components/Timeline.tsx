@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { Compass } from 'lucide-react';
@@ -66,7 +65,7 @@ const Timeline = () => {
         <div className="mx-auto max-w-3xl mt-16">
           <TimelineEvent 
             year="2012" 
-            title="Fundación de Escuela Azul Surf" 
+            title="Fundación de EscuelaSurf" 
             description="Nuestro fundador Luis Medina, campeón nacional de surf, decidió compartir su pasión por las olas abriendo la primera sede en Punta de Lobos."
           />
           <TimelineEvent 

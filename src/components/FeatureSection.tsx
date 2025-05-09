@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Shield, Award, Heart } from 'lucide-react';
 
@@ -29,7 +28,7 @@ const FeatureSection = () => {
       <div className="surf-container">
         <h2 className="section-title text-center mx-auto">¿Por qué elegirnos?</h2>
         <p className="text-center text-lg text-gray-600 mb-16 max-w-3xl mx-auto">
-          Nuestra escuela se destaca por la calidad de la enseñanza, la experiencia de nuestros instructores y la ubicación privilegiada junto a las mejores olas de Pichilemu.
+          EscuelaSurf se destaca por la calidad de la enseñanza, la experiencia de nuestros instructores y la ubicación privilegiada junto a las mejores olas de Pichilemu.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

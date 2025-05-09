@@ -41,11 +41,12 @@ const Navbar = () => {
       <div className="surf-container flex justify-between items-center">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
           <Link to="/" className="flex items-center">
+            <img src="/logo.png" alt="Logo EscuelaSurf" className="h-10 w-10 mr-2" />
             <span className={cn(
               "text-2xl font-bold",
               isScrolled ? "text-surf-blue-dark" : "text-white"
             )}>
-              Escuela de Surf <span className="text-surf-coral">Pichilemu</span>
+              EscuelaSurf
             </span>
           </Link>
           <div className="flex items-center space-x-3 ml-1">

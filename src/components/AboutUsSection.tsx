@@ -20,7 +20,7 @@ const AboutUsSection = () => {
             </div>
             <div className="w-20 h-1 bg-surf-coral mb-6"></div>
             <p className="text-lg text-gray-700 mb-8">
-              En Escuela Azul Surf, combinamos más de una década de experiencia en enseñanza de surf con la pasión por las olas de Pichilemu. Nuestro equipo de instructores certificados te guiará desde tu primera remada hasta tu mejor maniobra, en el corazón de la capital del surf en Chile. ¡Ven a descubrir por qué Pichilemu es la meca mundial de los riders y únete al espíritu de la ola!
+              En EscuelaSurf, combinamos más de una década de experiencia en enseñanza de surf con la pasión por las olas de Pichilemu. Nuestro equipo de instructores certificados te guiará desde tu primera remada hasta tu mejor maniobra, en el corazón de la capital del surf en Chile. ¡Ven a descubrir por qué Pichilemu es la meca mundial de los riders y únete al espíritu de la ola!
             </p>
             <a href="/nosotros" className="inline-block bg-surf-coral hover:bg-surf-coral-dark text-white font-semibold px-8 py-3 rounded-full shadow transition-colors duration-300 mb-8">Conócenos</a>
             <div className="flex flex-wrap gap-4">

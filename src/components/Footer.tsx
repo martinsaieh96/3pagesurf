@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,7 +10,7 @@ const Footer = () => {
           {/* Logo y descripción */}
           <div className="mb-6 md:mb-0">
             <h3 className="text-2xl font-bold mb-4">
-              Escuela de Surf <span className="text-surf-coral">Pichilemu</span>
+              EscuelaSurf
             </h3>
             <p className="mb-6 text-gray-300">
               Ofrecemos la mejor experiencia de surf en Pichilemu, Chile. Aprende a surfear con instructores profesionales en las mejores olas del Pacífico.
@@ -40,14 +39,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-surf-coral" />
-                <span>info@escueladesurfpichilemu.cl</span>
+                <span>info@escuelasurf.cl</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} Escuela de Surf Pichilemu. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} EscuelaSurf. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

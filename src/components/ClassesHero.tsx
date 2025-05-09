@@ -9,7 +9,7 @@ const ClassesHero = () => {
       {/* Hero image background */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img 
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80" 
+          src="/clases.png" 
           alt="Clases de surf en Pichilemu" 
           className="object-cover w-full h-full"
         />
@@ -24,7 +24,7 @@ const ClassesHero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 text-white">
-            Clases de Surf en Escuela Pichilemu
+            Clases de Surf en EscuelaSurf
           </h1>
           <p className="text-lg md:text-xl mb-10 text-white/90 max-w-2xl">
             Conecta con el océano y descubre tu potencial. Nuestras clases son una promesa de superación, diversión y respeto por el mar.
