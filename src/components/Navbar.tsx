@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -69,8 +68,8 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Button className="bg-surf-coral hover:bg-surf-coral-dark text-white">
-            Reservar
+          <Button className="bg-surf-coral hover:bg-surf-coral-dark text-white" asChild>
+            <Link to="/clases">Reservar</Link>
           </Button>
         </nav>
 

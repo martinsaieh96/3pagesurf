@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Waves } from 'lucide-react';
@@ -77,8 +76,8 @@ const AboutUsSection = () => {
                 className="w-full h-full"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1547619292-8816ee7cdd50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
-                  alt="Instructores de surf en Pichilemu" 
+                  src="https://images.unsplash.com/photo-1519789110007-0e751882be76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" 
+                  alt="Clase de surf intermedio" 
                   className="w-full h-full object-cover"
                 />
               </motion.div>
