@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -87,11 +86,36 @@ export function ClassReservationForm({ classType, onClose }: ClassReservationFor
   });
 
   function onSubmit(data: FormValues) {
-    // In a real app, this would send the data to a server
-    console.log("Reservation data:", data);
+    // Format the date in Spanish
+    const formattedDate = format(data.date, "dd 'de' MMMM 'de' yyyy", { locale: es });
+    
+    // Create WhatsApp message
+    const message = `¡Hola! Quiero reservar una clase de surf:\n\n` +
+      `📋 *Detalles de la Reserva:*\n` +
+      `• Clase: ${classType.title}\n` +
+      `• Precio: ${classType.price}\n` +
+      `• Nombre: ${data.name}\n` +
+      `• Email: ${data.email}\n` +
+      `• Teléfono: ${data.phone}\n` +
+      `• Nivel: ${data.level}\n` +
+      `• Fecha: ${formattedDate}\n` +
+      `• Horario: ${data.time} hrs\n` +
+      `${data.comments ? `• Comentarios: ${data.comments}\n` : ''}`;
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // WhatsApp number (replace with your actual number)
+    const whatsappNumber = "56912345678"; // Replace with your actual WhatsApp number
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
     
     toast.success("¡Reserva enviada con éxito!", {
-      description: `Te hemos enviado un correo a ${data.email} con los detalles de tu reserva para ${classType.title}.`,
+      description: "Serás redirigido a WhatsApp para confirmar tu reserva.",
     });
     
     onClose();
