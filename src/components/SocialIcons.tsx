@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Instagram, MessageCircle } from 'lucide-react';
 
@@ -6,7 +5,7 @@ const SocialIcons = ({ isScrolled = false }) => {
   return (
     <div className="flex gap-3">
       <a 
-        href="https://wa.me/56912345678" 
+        href="https://wa.me/56942938748" 
         target="_blank" 
         rel="noopener noreferrer" 
         className={`${isScrolled ? 'bg-surf-blue/20' : 'bg-white/20'} backdrop-blur-sm p-1.5 rounded-full hover:bg-white/40 transition-all duration-300`}
@@ -14,7 +13,7 @@ const SocialIcons = ({ isScrolled = false }) => {
         <MessageCircle className={`w-4 h-4 ${isScrolled ? 'text-surf-blue' : 'text-white'} drop-shadow-md`} />
       </a>
       <a 
-        href="https://instagram.com/escueladesurfpichilemu" 
+        href="https://instagram.com" 
         target="_blank" 
         rel="noopener noreferrer" 
         className={`${isScrolled ? 'bg-surf-blue/20' : 'bg-white/20'} backdrop-blur-sm p-1.5 rounded-full hover:bg-white/40 transition-all duration-300`}
@@ -22,7 +21,7 @@ const SocialIcons = ({ isScrolled = false }) => {
         <Instagram className={`w-4 h-4 ${isScrolled ? 'text-surf-blue' : 'text-white'} drop-shadow-md`} />
       </a>
       <a 
-        href="https://facebook.com/escueladesurfpichilemu" 
+        href="https://facebook.com" 
         target="_blank" 
         rel="noopener noreferrer" 
         className={`${isScrolled ? 'bg-surf-blue/20' : 'bg-white/20'} backdrop-blur-sm p-1.5 rounded-full hover:bg-white/40 transition-all duration-300`}

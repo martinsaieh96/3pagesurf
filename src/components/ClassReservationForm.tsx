@@ -106,7 +106,7 @@ export function ClassReservationForm({ classType, onClose }: ClassReservationFor
     const encodedMessage = encodeURIComponent(message);
     
     // WhatsApp number (replace with your actual number)
-    const whatsappNumber = "56912345678"; // Replace with your actual WhatsApp number
+    const whatsappNumber = "56942938748"; // Replace with your actual WhatsApp number
     
     // Create WhatsApp URL
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -16,11 +15,11 @@ const ClassesFAQ = () => {
       answer: "Solo necesitas traje de baño, toalla, protector solar y mucha energía. Nosotros te proporcionamos todo el equipo necesario: tabla de surf, traje de neopreno y accesorios."
     },
     {
-      question: "¿HACÉIS FOTOS SURFEANDO?",
+      question: "¿HACEN FOTOS SURFEANDO?",
       answer: "¡Sí! Ofrecemos un servicio opcional de fotografía durante las sesiones. Las fotos se comparten digitalmente después de la clase."
     },
     {
-      question: "¿ME RECOGÉIS EN EL HOTEL?",
+      question: "¿ME RECOGEN EN EL HOTEL?",
       answer: "Ofrecemos servicio de recogida desde varios hoteles y puntos céntricos de Pichilemu. Consulta con nosotros al momento de reservar."
     },
     {
