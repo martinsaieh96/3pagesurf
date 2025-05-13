@@ -32,7 +32,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 font-montserrat leading-tight">
-            Vive la experiencia del surf en Pichilemu
+            Vive la experiencia del surf en Chile
           </h1>
           <p className="text-lg md:text-xl mb-10 opacity-90 max-w-xl">
             Aprende a surfear con los mejores instructores en las mejores olas de Chile. 
