@@ -30,7 +30,7 @@ const MissionSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-surf-blue-dark mb-4">Misión, Visión y Valores</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">Los pilares que nos guían cada día para ofrecer la mejor experiencia de surf en Pichilemu.</p>
+          <p className="text-gray-600 max-w-2xl mx-auto">Los pilares que nos guían cada día para ofrecer la mejor experiencia de surf en Chile.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

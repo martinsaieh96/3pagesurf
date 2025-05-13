@@ -13,7 +13,7 @@ const Footer = () => {
               EscuelaSurf
             </h3>
             <p className="mb-6 text-gray-300">
-              Ofrecemos la mejor experiencia de surf en Pichilemu, Chile. Aprende a surfear con instructores profesionales en las mejores olas del Pacífico.
+              Ofrecemos la mejor experiencia de surf en las costas de Chile. Aprende a surfear con instructores profesionales en las mejores olas del Pacífico.
             </p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" className="hover:text-surf-coral transition-colors">
@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-surf-coral" />
-                <span>Playa Principal, Pichilemu, Chile</span>
+                <span>Costa de Chile</span>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-surf-coral" />

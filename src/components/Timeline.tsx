@@ -66,12 +66,12 @@ const Timeline = () => {
           <TimelineEvent 
             year="2012" 
             title="Fundación de EscuelaSurf" 
-            description="Nuestro fundador Luis Medina, campeón nacional de surf, decidió compartir su pasión por las olas abriendo la primera sede en Punta de Lobos."
+            description="Nuestro fundador, campeón nacional de surf, decidió compartir su pasión por las olas abriendo nuestra primera sede en la costa chilena."
           />
           <TimelineEvent 
             year="2014" 
             title="Primeras Competencias" 
-            description="Nuestros primeros alumnos comenzaron a destacarse en competencias regionales y nacionales, poniendo en el mapa a nuestra escuela."
+            description="Nuestros primeros alumnos comenzaron a destacarse en competencias regionales y nacionales, estableciendo nuestro nombre en el mundo del surf."
           />
           <TimelineEvent 
             year="2016" 
@@ -91,7 +91,7 @@ const Timeline = () => {
           <TimelineEvent 
             year="Hoy" 
             title="Expansión y Comunidad" 
-            description="Con más de 5,000 alumnos graduados, seguimos creciendo y construyendo una comunidad apasionada por el mar y el surf."
+            description="Con miles de alumnos graduados, seguimos creciendo y construyendo una comunidad apasionada por el mar y el surf en las costas de Chile."
             isLast={true}
           />
         </div>

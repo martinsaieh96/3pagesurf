@@ -15,7 +15,7 @@ const AboutCTA = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Conoce EscuelaSurf</h2>
           <p className="text-lg md:text-xl mb-10 max-w-3xl mx-auto">
-            La mejor forma de conocernos es probando nuestras clases. Nos encantaría compartir contigo nuestra pasión por el surf y las olas de Pichilemu en EscuelaSurf.
+            La mejor forma de conocernos es probando nuestras clases. Nos encantaría compartir contigo nuestra pasión por el surf y las olas de Chile en EscuelaSurf.
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}
